@@ -6,8 +6,20 @@
         <form action="functions/setUser.php" method="post">
             <input type="text" placeholder="pseudo" name="pseudo">
             <input type="password" placeholder="password" name="password">
+            <input type="password" placeholder="password" name="confirmPassword">
             <input type="submit" value="register">
         </form>
+
+        <div class="message">
+            <?php
+                if (isset($_GET["message"])){
+                        echo $_GET["message"];
+                }
+            
+            ?>
+        <p>message</p>
+        </div>
+
     </div>
 </body>
 </html>
